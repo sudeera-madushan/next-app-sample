@@ -1,0 +1,119 @@
+[debug] [2024-05-15T11:08:13.968Z] ----------------------------------------------------------------------
+[debug] [2024-05-15T11:08:13.973Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vijes\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-15T11:08:13.974Z] CLI Version:   13.9.0
+[debug] [2024-05-15T11:08:13.974Z] Platform:      win32
+[debug] [2024-05-15T11:08:13.974Z] Node Version:  v20.12.2
+[debug] [2024-05-15T11:08:13.975Z] Time:          Wed May 15 2024 16:38:13 GMT+0530 (India Standard Time)
+[debug] [2024-05-15T11:08:13.975Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-15T11:08:14.118Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-15T11:08:14.119Z] > authorizing via signed-in user (sudeeramadushan888@gmail.com)
+[debug] [2024-05-15T11:08:14.119Z] [iam] checking project next-app-sample-d2ffa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-15T11:08:14.123Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/next-app-sample-d2ffa:testIamPermissions [none]
+[debug] [2024-05-15T11:08:14.123Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/next-app-sample-d2ffa:testIamPermissions x-goog-quota-user=projects/next-app-sample-d2ffa
+[debug] [2024-05-15T11:08:14.123Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/next-app-sample-d2ffa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-15T11:08:16.079Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/next-app-sample-d2ffa:testIamPermissions 200
+[debug] [2024-05-15T11:08:16.080Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/next-app-sample-d2ffa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-15T11:08:16.082Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/next-app-sample-d2ffa [none]
+[debug] [2024-05-15T11:08:17.524Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/next-app-sample-d2ffa 200
+[debug] [2024-05-15T11:08:17.524Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/next-app-sample-d2ffa {"projectId":"next-app-sample-d2ffa","projectNumber":"1004562085454","displayName":"next-app-sample","name":"projects/next-app-sample-d2ffa","resources":{"hostingSite":"next-app-sample-d2ffa"},"state":"ACTIVE","etag":"1_b8fd21bc-76c7-4f90-bacd-fc82b0ad70ab"}
+[debug] [2024-05-15T11:08:26.187Z] defaultcredentials: writing to file C:\Users\vijes\AppData\Roaming\firebase\sudeeramadushan888_gmail_com_application_default_credentials.json
+[debug] [2024-05-15T11:08:26.257Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/next-app-sample-d2ffa/sites pageToken=&pageSize=10
+[debug] [2024-05-15T11:08:27.586Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/next-app-sample-d2ffa/sites 200
+[debug] [2024-05-15T11:08:27.586Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/next-app-sample-d2ffa/sites {"sites":[{"name":"projects/next-app-sample-d2ffa/sites/next-app-sample-d2ffa","defaultUrl":"https://next-app-sample-d2ffa.web.app","appId":"1:1004562085454:web:6d0014c015fc114d22351f","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-15T11:08:27.587Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1004562085454:web:6d0014c015fc114d22351f/config [none]
+[debug] [2024-05-15T11:08:28.787Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1004562085454:web:6d0014c015fc114d22351f/config 200
+[debug] [2024-05-15T11:08:28.787Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1004562085454:web:6d0014c015fc114d22351f/config {"projectId":"next-app-sample-d2ffa","appId":"1:1004562085454:web:6d0014c015fc114d22351f","storageBucket":"next-app-sample-d2ffa.appspot.com","apiKey":"AIzaSyBV0N9EnHQWVWzhPBBPHpSynO0LtcVlmsY","authDomain":"next-app-sample-d2ffa.firebaseapp.com","messagingSenderId":"1004562085454"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-05-15T11:08:49.706Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/next-app-sample-d2ffa/sites/next-app-sample-d2ffa [none]
+[debug] [2024-05-15T11:08:50.901Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/next-app-sample-d2ffa/sites/next-app-sample-d2ffa 200
+[debug] [2024-05-15T11:08:50.902Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/next-app-sample-d2ffa/sites/next-app-sample-d2ffa {"name":"projects/next-app-sample-d2ffa/sites/next-app-sample-d2ffa","defaultUrl":"https://next-app-sample-d2ffa.web.app","appId":"1:1004562085454:web:6d0014c015fc114d22351f","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.4
+
+[info]    - Environments: .env.local
+
+
+[info]    Creating an optimized production build ...
+
+[info] Compiler server unexpectedly exited with code: null and signal: SIGTERM
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/5) ...
+
+[info]    Generating static pages (1/5) 
+
+[info]    Generating static pages (2/5) 
+
+[info]    Generating static pages (3/5) 
+
+[info]  ✓ Generating static pages (5/5) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    5.22 kB        89.6 kB
+└ ○ /_not-found                          882 B          85.2 kB
++ First Load JS shared by all            84.4 kB
+  ├ chunks/69-02072d3a2eb6f573.js        29.1 kB
+  ├ chunks/fd9d1056-d03af0e963d7a2f3.js  53.4 kB
+  └ other shared chunks (total)          1.87 kB
+
+
+[info] 
+○  (Static)  prerendered as static content
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • Image Optimization
+[info] 
+[debug] [2024-05-15T11:10:34.644Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/next-app-sample-d2ffa/sites/next-app-sample-d2ffa [none]
+[debug] [2024-05-15T11:10:35.772Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/next-app-sample-d2ffa/sites/next-app-sample-d2ffa 200
+[debug] [2024-05-15T11:10:35.773Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/next-app-sample-d2ffa/sites/next-app-sample-d2ffa {"name":"projects/next-app-sample-d2ffa/sites/next-app-sample-d2ffa","defaultUrl":"https://next-app-sample-d2ffa.web.app","appId":"1:1004562085454:web:6d0014c015fc114d22351f","type":"DEFAULT_SITE"}
+[debug] [2024-05-15T11:10:36.539Z] Error: ENOENT: no such file or directory, lstat 'C:\Users\vijes\Documents\BigZKoop\NextJs\next-app\.next\C:\Users\vijes\Documents\BigZKoop\NextJs\next-app\.next\app-build-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-05-15T11:15:14.895Z] ----------------------------------------------------------------------
+[debug] [2024-05-15T11:15:14.915Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vijes\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-05-15T11:15:14.915Z] CLI Version:   13.9.0
+[debug] [2024-05-15T11:15:14.916Z] Platform:      win32
+[debug] [2024-05-15T11:15:14.916Z] Node Version:  v20.12.2
+[debug] [2024-05-15T11:15:14.917Z] Time:          Wed May 15 2024 16:45:14 GMT+0530 (India Standard Time)
+[debug] [2024-05-15T11:15:14.917Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-15T11:15:15.058Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-15T11:15:15.059Z] > authorizing via signed-in user (sudeeramadushan888@gmail.com)
+[debug] [2024-05-15T11:15:15.059Z] [iam] checking project next-app-sample-d2ffa for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-15T11:15:15.064Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/next-app-sample-d2ffa:testIamPermissions [none]
+[debug] [2024-05-15T11:15:15.064Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/next-app-sample-d2ffa:testIamPermissions x-goog-quota-user=projects/next-app-sample-d2ffa
+[debug] [2024-05-15T11:15:15.065Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/next-app-sample-d2ffa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-15T11:15:16.910Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/next-app-sample-d2ffa:testIamPermissions 200
+[debug] [2024-05-15T11:15:16.911Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/next-app-sample-d2ffa:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-15T11:15:16.913Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/next-app-sample-d2ffa [none]
+[debug] [2024-05-15T11:15:17.695Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/next-app-sample-d2ffa 200
+[debug] [2024-05-15T11:15:17.696Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/next-app-sample-d2ffa {"projectId":"next-app-sample-d2ffa","projectNumber":"1004562085454","displayName":"next-app-sample","name":"projects/next-app-sample-d2ffa","resources":{"hostingSite":"next-app-sample-d2ffa"},"state":"ACTIVE","etag":"1_b8fd21bc-76c7-4f90-bacd-fc82b0ad70ab"}
+[debug] [2024-05-15T11:15:30.490Z] defaultcredentials: writing to file C:\Users\vijes\AppData\Roaming\firebase\sudeeramadushan888_gmail_com_application_default_credentials.json
+[debug] [2024-05-15T11:15:30.556Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/next-app-sample-d2ffa/sites pageToken=&pageSize=10
+[debug] [2024-05-15T11:15:31.884Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/next-app-sample-d2ffa/sites 200
+[debug] [2024-05-15T11:15:31.885Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/next-app-sample-d2ffa/sites {"sites":[{"name":"projects/next-app-sample-d2ffa/sites/next-app-sample-d2ffa","defaultUrl":"https://next-app-sample-d2ffa.web.app","appId":"1:1004562085454:web:6d0014c015fc114d22351f","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-15T11:15:31.887Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1004562085454:web:6d0014c015fc114d22351f/config [none]
+[debug] [2024-05-15T11:15:33.033Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1004562085454:web:6d0014c015fc114d22351f/config 200
+[debug] [2024-05-15T11:15:33.033Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1004562085454:web:6d0014c015fc114d22351f/config {"projectId":"next-app-sample-d2ffa","appId":"1:1004562085454:web:6d0014c015fc114d22351f","storageBucket":"next-app-sample-d2ffa.appspot.com","apiKey":"AIzaSyBV0N9EnHQWVWzhPBBPHpSynO0LtcVlmsY","authDomain":"next-app-sample-d2ffa.firebaseapp.com","messagingSenderId":"1004562085454"}
